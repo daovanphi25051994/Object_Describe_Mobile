@@ -1,0 +1,52 @@
+.container {
+    text-align: center;
+}
+.samsung {
+    width: 300px;
+    height: 500px;
+    background: blueviolet;
+    border: black solid 1px;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: white;
+}
+.iphone {
+    width: 270px;
+    height: 440px;
+    background: pink;
+    border: black solid 1px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.content {
+    text-align: center;
+}
+button {
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+}
+button:hover {
+    background: aqua;
+}
+input {
+    border-radius: 5px;
+    border: none;
+}
+input:hover {
+    background: ghostwhite;
+}
+.status {
+    background: red;
+    color: black;
+}
+.charge {
+    background: orange;
+}
+.off {
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+}
+.black {
+    background: black;
+}
+

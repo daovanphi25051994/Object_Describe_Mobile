@@ -5,9 +5,46 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>demo object</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <div class="samsung"><p>samsung</p>
+                    <input class="screen-samsung" id="content-message-samsung">
+                    <button class="screen-samsung" onclick="sendMessage(samsung, arrayIdSend[0], iphone, arrayClassShow[0], arrayClassShow[1])">send</button>
+                    <button class="screen-samsung" onclick="readInbox(samsung, arrayIdShow[0])">Inbox</button>
+                    <button class="screen-samsung" onclick="readOutbox(samsung, arrayIdShow[0])">Outbox</button>
+                    <button class="screen-samsung" onclick="showBatteryPower(samsung, arrayIdShow[0])">Battery</button>
+                    <div class="screen-samsung" id="samsungShowContent"></div>
+                </div>
+                <button class="status" onclick="changeStatus(samsung, arrayClassShow[0],arrayClassShow[1])">on/off</button>
+                <button class="charge" onclick="chargeButtery(samsung, arrayIdShow[0])">Charge</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="content">
+                <div class="iphone"><p class="name-iphone">iphone</p>
+                    <input class="screen-iphone" id="content-message-iphone">
+                    <button class="screen-iphone" onclick="sendMessage(iphone, arrayIdSend[1], samsung, arrayClassShow[2], arrayClassShow[3])">send</button>
+                    <button class="screen-iphone" onclick="readInbox(iphone, arrayIdShow[1])">Inbox</button>
+                    <button class="screen-iphone" onclick="readOutbox(iphone, arrayIdShow[1])">Outbox</button>
+                    <button class="screen-iphone" onclick="showBatteryPower(iphone, arrayIdShow[1])">Battery</button>
+                    <div class="screen-iphone" id="iphoneShowContent"></div>
+                </div>
+                <button class="status" onclick="changeStatus(iphone, arrayClassShow[2],arrayClassShow[3])">on/off</button>
+                <button class="charge" onclick="chargeButtery(iphone, arrayIdShow[1])">Charge</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="mobile.js"></script>
 </body>
 </html>
